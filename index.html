@@ -7,33 +7,41 @@
 
         .wrapper{
             display: grid;
-            grid-template-columns: 70% 30%;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-auto-rows: maxmin=(100px);
+            grid-gap: unset;
+
         }
        .wrapper {
            background-color: hotpink;
        }
 
        .wrapper div:nth-child(odd){
-           background: indigo;
+           background: rgba(135, 116, 148, 0.192);
+           border:rgb(126, 150, 147);
+       }
+       .box1{
+           grid-column: 3;
+           grid-row: 1/2;
        }
     </style>
 
 </head>
 <body>
     <div class="wrapper">
-        <div>
+        <div class="box box1">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo tempore repellendus magni libero ipsum
             corporis natus minus totam illum possimus. Fuga libero ducimus quasi iste ullam ipsa omnis nisi minima!
         </div>
-        <div>
+        <div class="box box2">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo tempore repellendus magni libero ipsum
             corporis natus minus totam illum possimus. Fuga libero ducimus quasi iste ullam ipsa omnis nisi minima!
         </div>
-        <div>
+        <div class="box box3">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo tempore repellendus magni libero ipsum
             corporis natus minus totam illum possimus. Fuga libero ducimus quasi iste ullam ipsa omnis nisi minima!
         </div>
-        <div>
+        <div class="box box4">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo tempore repellendus magni libero ipsum
             corporis natus minus totam illum possimus. Fuga libero ducimus quasi iste ullam ipsa omnis nisi minima!
         </div>
