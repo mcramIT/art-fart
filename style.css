@@ -1,18 +1,18 @@
 div>h1 {
-    background-color: black;
+    background-color: transparent;
     color: blanchedalmond;
     text-align: center;
     font-family: 'Monoton', cursive;
     font-size: 7vw;
+    margin-top: 20vw;
     font-weight: lighter;
 }
 
 body {
+    background-image: url(images/tv.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 70vw;
     background-color: black;
     display: grid;
-}
-
-video {
-    justify-content: center;
-    align-items: center;
 }
